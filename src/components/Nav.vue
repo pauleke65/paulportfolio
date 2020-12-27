@@ -35,7 +35,7 @@
                     <img src="../assets/images/Twitter.svg" alt="">
                 </div>
                 <div class="mx-2">
-                    <img src="../assets/images/BitBucket.svg" alt="">
+                    <img src="../assets/images/Linkedin.svg" alt="">
                 </div>
                 <div class="mx-2">
                     <img src="../assets/images/GitHub.svg" alt="">
