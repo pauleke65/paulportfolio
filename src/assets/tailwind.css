@@ -1,0 +1,18 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@layer components{
+    .nav_menu{
+        @apply fixed top-0 w-full h-screen p-12 flex bg-white justify-center duration-300;
+    }
+
+    .bd-grid{
+        @apply grid max-w-screen-lg mx-4 gap-x-8;
+        grid-template-columns: 100%;
+        width: calc(100% - 2rem);
+    }
+}
