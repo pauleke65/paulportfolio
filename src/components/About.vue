@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-0 px-0 mt-0 pb-8" id="about">
+  <section class="pt-16 px-0 mt-0 pb-8" id="about">
       <div class="flex flex-col h-screen justify-center">
           <div>
               <img class="rounded-full mx-auto h-44 w-44" src='../assets/images/profile.jpg' alt="">

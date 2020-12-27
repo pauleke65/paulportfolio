@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="lg:m-0 lg:pl-324px ">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <Nav />
@@ -18,7 +18,6 @@ export default {
     Nav,
     MainPage
   }
+  
 }
 </script>
-
-
