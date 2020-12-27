@@ -1,4 +1,7 @@
-# paulport
+# Paul's Portfolio
+# Not Yet Completed. Still in Progress....
+
+Built with VueJS and TailWindCSS
 
 ## Project setup
 ```
