@@ -15,12 +15,12 @@
     <div class="flex flex-col items-center justify-center">
         <div>
         <ul class="">
-            <li class="text-3xl nav__menu text-black mt-16 mb-8 active"><a @click="toggleNav" href="#home" class="">Home</a></li>
-            <li class="text-3xl nav__menu text-black mb-8"><a @click="toggleNav" href="#about" class="">About</a></li>
-            <li class="text-3xl nav__menu text-black mb-8"><a @click="toggleNav" href="#services" class="">Services</a></li>
-            <li class="text-3xl nav__menu text-black mb-8"><a @click="toggleNav" href="#works" class="">Works</a></li>
-            <li class="text-3xl nav__menu text-black mb-8"><a @click="toggleNav" href="#interests" class="">Interests</a></li>
-            <li class="text-3xl nav__menu text-black mb-8"><a @click="toggleNav" href="#contact" class="">Contact</a></li>
+            <li class="text-3xl text-black mt-16 mb-8"><a class="active" @click="toggleNav" href="#home" >Home</a></li>
+            <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#about" >About</a></li>
+            <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#services" >Services</a></li>
+            <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#works" >Works</a></li>
+            <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#blog" >My Blog</a></li>
+            <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#contact" >Contact</a></li>
         </ul>
         </div>
 
@@ -59,7 +59,13 @@ export default {
   name: 'Nav',
   data() {
       return{
-      toggled: false
+      toggled: false,
+       offset: 200,
+            duration: 100,
+      activeClass: {
+          type: String,
+          default: 'active',
+        },
       }
     },
 

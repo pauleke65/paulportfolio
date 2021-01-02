@@ -1,6 +1,6 @@
 <template>
 
-<section class="bd-grid items-center" id="services">
+<section class="bd-grid pb-8 items-center" id="services">
 
   <div class="flex pt-8 flex-col items-center justify-center">
 
@@ -42,6 +42,16 @@
        </div>
        <div class="text-white text-center text-2xl">
          <p>Design</p>
+       </div>
+     </div>
+
+
+     <div class="mt-12">
+       <div>
+         <img class="mx-auto w-72 h-52" src="../assets/images/Digital 04.jpg" alt="">
+       </div>
+       <div class="text-white pt-4 text-center text-2xl">
+         <p>Digital Marketing</p>
        </div>
      </div>
 

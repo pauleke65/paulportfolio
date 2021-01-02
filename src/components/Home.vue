@@ -1,7 +1,7 @@
 <template>
 
 <section class="h-screen bd-grid items-center" id="home">
-    <div class="flex text-white flex-col items-center h-max">
+    <div class="flex text-white flex-col items-center justify-center h-max">
         <h3 class="text-lg">👋Hi There, I'm</h3>
         <h1 class="text-6xl font-light">Paul <span class="font-bold">Imoke</span></h1>
         <h3 class="text-yellow-500 text-lg">A Software Developer</h3>
