@@ -1,6 +1,6 @@
 <template>
 
-<main class="bg-black">
+<main class="bg-black w-full">
     <Home />
     <About />
     <Services />

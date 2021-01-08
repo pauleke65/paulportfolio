@@ -9,8 +9,10 @@ module.exports = {
        spacing: {
          '324px': '324px',
          '25pr': '25%',
+         '50pr': '50%',
          '100pr-2rem': 'calc(100% - 2rem)',
          '-100pr': '-100%',
+         '-2': '-0.5rem',
          'max': 'max-content'
        },
        gridTemplateColumns: {
