@@ -24,7 +24,7 @@
 
         <div class="mt-12 flex flex-col">
           <p class="ml-4 my-1 text-2xl font-bold text-center mb-6 text-white">My Favorite Tools</p>
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-y-3">
+          <div class="grid mx-4 grid-cols-2 md:grid-cols-5 gap-3">
             <div class="bg-white w-40 h-40 justify-center flex flex-col">
               <img class="mt-2 w-28 mx-auto" src="../assets/logo.png" alt="" />
               <p class="text-black text-xl text-center">Vue JS</p>

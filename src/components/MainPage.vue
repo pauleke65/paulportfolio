@@ -5,6 +5,7 @@
     <About />
     <Services />
     <Works />
+    <Contact />
 </main>
 
 
@@ -13,9 +14,10 @@
 
 <script>
 import Home from './Home.vue'
-import About from  './About.vue'
+import About from  './About'
 import Services from './Services'
 import Works from './Works'
+import Contact from './Contact'
 
 export default {
   name: 'MainPage',
@@ -23,7 +25,8 @@ export default {
     Home,
     About,
     Services,
-    Works
+    Works,
+    Contact
   }
 }
 </script>
