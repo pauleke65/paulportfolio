@@ -12,6 +12,7 @@ module.exports = {
          '50pr': '50%',
          '100pr-2rem': 'calc(100% - 2rem)',
          '-100pr': '-100%',
+         '95pr': '95%',
          '-2': '-0.5rem',
          'max': 'max-content'
        },
