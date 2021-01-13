@@ -1,10 +1,12 @@
 <template>
-  <div id="appmain" class="lg:m-0 lg:pl-324px ">
+<html>
+    <div id="appmain" class="lg:m-0 lg:pl-324px ">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <Nav />
     <MainPage />
   </div>
+</html>
 </template>
 
 <script>
@@ -20,3 +22,11 @@ export default {
   }
 }
 </script>
+
+<style>
+
+html{
+  scroll-behavior: smooth;
+}
+
+</style>
