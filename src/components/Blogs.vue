@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center flex-col w-screen bg-white p-2">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-screen bg-white p-2">
 
 
       <div class="flex flex-col m-2 p-2 bg-yellow-300 h-max">

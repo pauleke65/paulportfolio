@@ -1,8 +1,10 @@
 <template>
-  <div class="blog">
+  <div class="flex flex-col h-screen">
     <Blognav />
+    <main class="flex-1 overflow-y-auto">
     <Blogmain />
     <Blogs />
+    </main>
   </div>
 </template>
 <script>
