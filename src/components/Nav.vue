@@ -19,7 +19,7 @@
             <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#about" >About</a></li>
             <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#services" >Services</a></li>
             <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#works" >Works</a></li>
-            <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#blog" >My Blog</a></li>
+            <li class="text-3xl text-black mb-8"><router-link to="/blog">My Blog</router-link></li>
             <li class="text-3xl text-black mb-8"><a class="" @click="toggleNav" href="#contact" >Contact</a></li>
         </ul>
         </div>

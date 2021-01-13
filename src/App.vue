@@ -1,23 +1,9 @@
 <template>
-  <div id="app" class="lg:m-0 lg:pl-324px ">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <Nav />
-    <MainPage />
+  <div id="app">
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Nav from './components/Nav.vue'
-import MainPage from './components/MainPage.vue'
+<style>
 
-
-export default {
-  name: 'App',
-  components: {
-    Nav,
-    MainPage
-  }
-  
-}
-</script>
+</style>

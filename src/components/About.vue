@@ -15,7 +15,7 @@
       </div>
 
       <div class="text-white mx-4">
-        <p class="text-center text-xl">
+        <p class="text-center md:mx-8 text-xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo
           molestias, facere impedit commodi veritatis dolores beatae corrupti
           sequi voluptates consequatur asperiores vel distinctio nemo aspernatur
@@ -24,7 +24,7 @@
 
         <div class="mt-12 flex flex-col">
           <p class="ml-4 my-1 text-2xl font-bold text-center mb-6 text-white">My Favorite Tools</p>
-          <div class="grid mx-auto grid-cols-2 md:grid-cols-4 gap-3">
+          <div class="grid mx-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
             <div class="bg-white w-40 h-40 justify-center flex flex-col">
               <img class="mt-2 w-28 mx-auto" src="../assets/logo.png" alt="" />
               <p class="text-black text-xl text-center">Vue JS</p>

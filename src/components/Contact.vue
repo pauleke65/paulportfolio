@@ -11,9 +11,11 @@
         <p class="text-white md:mx-4">Having any issues or solutions you wish to discuss or implement, reach out to me here. I'd be happy to hear your ideas and give you a call</p>
       </div>
 
-      <div class="flex flex-col w-full md:w-95pr">
-        <input class="mt-4 h-12 pl-4" placeholder="Full Name" type="text"/>
-        <input class="mt-4 h-12 pl-4" placeholder="Email Address" type="text"/>
+      <div class="flex flex-col w-full md:w-95pr md:bg-gray-900 md:px-8 md:pb-8 md:mt-4 md:pt-4">
+        <div class="flex flex-col md:flex-row">
+        <input class="mt-4 h-12 pl-4 " placeholder="Full Name" type="text"/>
+        <input class="mt-4 h-12 pl-4 md:ml-28 md:w-100pr" placeholder="Email Address" type="text"/>
+        </div>
         <input class="mt-4 h-12 pl-4" inputmode="numeric" placeholder="Phone Number" type="number"/>
         <input class="mt-4 h-12 pl-4" placeholder="Subject" type="text"/>
         <textarea class="mt-4 h-52 px-4 pt-4" placeholder="Message"/>
