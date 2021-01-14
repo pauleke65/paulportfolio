@@ -2,75 +2,46 @@
   <div class="grid grid-cols-1 md:grid-cols-2 w-screen bg-white p-2">
 
 
-      <div class="flex flex-col m-2 p-2  h-max">
+
+        <router-link
+            v-for="post in posts" :key="post.id" 
+            :to="{ path: '/post/' + post.pagename + '/' + post.id}"
+            class="uk-link-reset"
+           
+          >
+       <div class="flex flex-col m-2 p-2 h-max">
           <div class="flex flex-col">
-              <h2 class="text-2xl font-extrabold">Find out the secrets to a better health and a better job right now</h2>
-              <p class="text-gray-500">If you want a better-paying job, then stop committing the same mistakes which I did. And then do  better than i ever did. Because I'm Awesome</p>
-              <p class="text-sm text-gray-700 mt-2">Personal | On Dec 12, 2021 by Paul Imoke</p>
+              <h2 class="text-2xl font-extrabold">{{ post.title }}</h2>
+              <p class="text-gray-500">{{ post.description }}</p>
+              <p class="text-sm text-gray-500 mt-2">{{ formatLine(post.category.name, post.published_at, post.author.name) }}</p>
           </div>
           <div>
-              <div class="bg-gray-700 h-32 mt-2">
-
-              </div>
+                  <img  class="h-32  md:h-44 mt-2 w-full" style="object-fit: cover" :src="'http://localhost:1337' + post.image.url" alt="">
           </div>
 
       </div>
+        </router-link>
 
-       <div class="flex flex-col m-2 p-2  h-max">
-          <div class="flex flex-col">
-              <h2 class="text-2xl font-extrabold">Blog Title</h2>
-              <p class="text-gray-500">Blog Post Description</p>
-          </div>
-          <div>
-              <div class="bg-gray-700 h-32 mt-2">
-
-              </div>
-          </div>
-
-      </div>
-
-         <div class="flex flex-col m-2 p-2  h-max">
-          <div class="flex flex-col">
-              <h2 class="text-2xl font-extrabold">Blog Title</h2>
-              <p class="text-gray-500">Blog Post Description</p>
-          </div>
-          <div>
-              <div class="bg-gray-700 h-32 mt-2">
-
-              </div>
-          </div>
-
-      </div>
-
-         <div class="flex flex-col m-2 p-2  h-max">
-          <div class="flex flex-col">
-              <h2 class="text-2xl font-extrabold">Blog Title</h2>
-              <p class="text-gray-500">Blog Post Description</p>
-          </div>
-          <div>
-              <div class="bg-gray-700 h-32 mt-2">
-
-              </div>
-          </div>
-
-      </div>
-
-         <div class="flex flex-col m-2 p-2  h-max">
-          <div class="flex flex-col">
-              <h2 class="text-2xl font-extrabold">Blog Title</h2>
-              <p class="text-gray-500">Blog Post Description</p>
-          </div>
-          <div>
-              <div class="bg-gray-700 h-32 mt-2">
-
-              </div>
-          </div>
-
-      </div>
+   
   </div>
 </template>
 <script>
+var moment = require('moment');
 export default {
   name: "Blogs",
+    data() {
+    return {
+  
+    };
+  },
+  props: {
+      posts: Array
+  },
+
+  methods: {
+      formatLine(category, date, author){
+          return `${category} | On ${moment(date).format("ll")} by ${author}`
+      }
+  }
 };
 </script>
