@@ -28,7 +28,7 @@ export default {
 
        axios
   // HTTP request
-  .post('http://localhost:1337/graphql', {
+  .post('http://192.168.43.103:1337/graphql', {
     headers: {
       'Content-Type': 'application/json'
     },
@@ -37,8 +37,7 @@ export default {
       query Articles {
         articles {
           id
-          title
-          content         
+          title         
           description
           pagename
           published_at
@@ -57,8 +56,6 @@ export default {
   })
   .then(({ data }) => this.posts = data.data.articles)
   .catch((e) => alert(error))
-      
-   
 
   },
 
