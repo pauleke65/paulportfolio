@@ -7,8 +7,8 @@
       <h1 class="text-center text-3xl font-extrabold mt-4">{{ post.title }}</h1>
       <p class="text-center mt-2 font-bold">{{ formatPostLine(post.author.name, post.published_at, post.category.name) }}</p>
 
-      <div>
-      <vue-markdown-it class="mt-10" :source="post.content" />
+      <div class="flex justify-center">
+      <vue-markdown-it class="mt-10 px-5" :source="post.content"  id="editor" />
       </div>
       </div>
     </main>
@@ -73,3 +73,12 @@ export default {
   
 }
 </script>
+
+<style scoped>
+#editor {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75
+}
+
+</style>

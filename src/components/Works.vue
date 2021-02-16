@@ -18,6 +18,8 @@
             
           </div>
       </div>
+
+      <router-link class=" bg-yellow-500 mt-12 rounded-full py-4 px-6 text-white text-xl text-center w-95pr" @click="alert('me')" to="/projects">See All Projects Here</router-link>
    
   </div>
 </section>
