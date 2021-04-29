@@ -28,7 +28,7 @@ export default {
 
        axios
   // HTTP request
-  .post('http://192.168.43.103:1337/graphql', {
+  .post('http://localhost:1337/graphql', {
     headers: {
       'Content-Type': 'application/json'
     },
